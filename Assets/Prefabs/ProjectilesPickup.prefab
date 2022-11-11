@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 58865737434419134}
   - component: {fileID: 199359977168995586}
   - component: {fileID: 198964518429456020}
-  - component: {fileID: 5537301502527898533}
-  - component: {fileID: 1400932588703428334}
+  - component: {fileID: 8545002005642528308}
+  - component: {fileID: 14323323378711415}
   m_Layer: 0
   m_Name: ProjectilesPickup
   m_TagString: Untagged
@@ -4824,7 +4824,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
---- !u!114 &5537301502527898533
+--- !u!114 &8545002005642528308
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4839,7 +4839,7 @@ MonoBehaviour:
   _data:
     _json: '{"declarations":{"Kind":"Object","collection":{"$content":[],"$version":"A"},"$version":"A"}}'
     _objectReferences: []
---- !u!114 &1400932588703428334
+--- !u!114 &14323323378711415
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

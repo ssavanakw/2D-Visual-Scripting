@@ -247,6 +247,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4688188216254916574, guid: 0e5db43139d98294dbd10a8cb6c37cf9,
+        type: 3}
+      propertyPath: _data._json
+      value: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"Scene","value":{"$content":"Level3","$type":"System.String"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e5db43139d98294dbd10a8cb6c37cf9, type: 3}
 --- !u!224 &105767139 stripped
@@ -267,6 +272,8 @@ GameObject:
   - component: {fileID: 156570735}
   - component: {fileID: 156570734}
   - component: {fileID: 156570733}
+  - component: {fileID: 156570737}
+  - component: {fileID: 156570736}
   m_Layer: 5
   m_Name: NewGameButton
   m_TagString: Untagged
@@ -374,6 +381,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 156570731}
   m_CullTransparentMesh: 0
+--- !u!114 &156570736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 156570731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -57143145, guid: a040fb66244a7f54289914d98ea4ef7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"nest":{"source":"Embed","macro":null,"embed":{"variables":{"Kind":"Flow","collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":1030.889,"y":176.7654},"zoom":0.7500001,"elements":[{"coroutine":false,"defaultValues":{},"position":{"x":-204.0,"y":-144.0},"guid":"ed75af76-a360-444e-88d1-de56c40967c6","$version":"A","$type":"Bolt.Start"},{"type":"System.Boolean","value":{"$content":false,"$type":"System.Boolean"},"defaultValues":{},"position":{"x":732.0,"y":277.0},"guid":"1c78c179-7e4d-4277-84bb-f4492b36875a","$version":"A","$type":"Bolt.Literal","$id":"12"},{"coroutine":false,"defaultValues":{},"position":{"x":-204.0,"y":60.0},"guid":"2b958230-37e3-470d-a68b-869755f79183","$version":"A","$type":"Bolt.Update"},{"coroutine":false,"defaultValues":{"target":null},"position":{"x":83.0,"y":-131.0},"guid":"77321d3b-e6dc-4aed-a167-ca7b015469c3","$version":"A","$type":"Bolt.OnButtonClick","$id":"16"},{"kind":"Saved","defaultValues":{"name":{"$content":"Level1_Unlocked","$type":"System.String"}},"position":{"x":314.0,"y":-109.0},"guid":"0181255e-aa4b-4e8e-9af6-3e46ccc5fc48","$version":"A","$type":"Bolt.SetVariable","$id":"18"},{"type":"System.Boolean","value":{"$content":true,"$type":"System.Boolean"},"defaultValues":{},"position":{"x":136.0,"y":-9.0},"guid":"73faa6fa-e105-4559-9833-413408f271dd","$version":"A","$type":"Bolt.Literal","$id":"20"},{"defaultValues":{"firstIndex":{"$content":2,"$type":"System.Int32"},"lastIndex":{"$content":5,"$type":"System.Int32"},"step":{"$content":1,"$type":"System.Int32"}},"position":{"x":540.0,"y":-19.0},"guid":"97899396-59eb-4a0d-ab70-6178e7b41dd4","$version":"A","$type":"Bolt.For","$id":"22"},{"kind":"Saved","defaultValues":{"name":{"$content":"","$type":"System.String"}},"position":{"x":904.0,"y":-1.0},"guid":"0279e5d7-a192-434f-af1e-7cac866758f8","$version":"A","$type":"Bolt.SetVariable","$id":"24"},{"chainable":false,"member":{"name":"Concat","parameterTypes":["System.Object","System.Object","System.Object"],"targetType":"System.String","targetTypeName":"System.String","$version":"A"},"defaultValues":{},"position":{"x":733.0,"y":115.0},"guid":"80b48760-620a-4a45-9868-63ada6bbfb73","$version":"A","$type":"Bolt.InvokeMember","$id":"26"},{"type":"System.String","value":{"$content":"_Unlocked","$type":"System.String"},"defaultValues":{},"position":{"x":565.0,"y":227.0},"guid":"31243344-6266-4485-9463-5d4f11ead061","$version":"A","$type":"Bolt.Literal","$id":"29"},{"type":"System.String","value":{"$content":"Level","$type":"System.String"},"defaultValues":{},"position":{"x":590.0,"y":127.0},"guid":"3780d8b3-7ebb-4081-b64c-de413d625619","$version":"A","$type":"Bolt.Literal","$id":"31"},{"sourceUnit":{"$ref":"16"},"sourceKey":"trigger","destinationUnit":{"$ref":"18"},"destinationKey":"assign","guid":"b680a6c6-5c8a-4f2e-a2a1-419fccfd85e4","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"18"},"sourceKey":"assigned","destinationUnit":{"$ref":"22"},"destinationKey":"enter","guid":"57669bd0-e536-41df-8b5b-31d7ed862338","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"22"},"sourceKey":"body","destinationUnit":{"$ref":"24"},"destinationKey":"assign","guid":"da76698f-dc8f-434f-8fce-c4bc2f2facf4","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"22"},"sourceKey":"currentIndex","destinationUnit":{"$ref":"26"},"destinationKey":"%arg1","guid":"9180f2e3-63a7-4b1c-8884-32c56f518600","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"31"},"sourceKey":"output","destinationUnit":{"$ref":"26"},"destinationKey":"%arg0","guid":"47471e39-9b70-4688-a434-9709aeca837c","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"20"},"sourceKey":"output","destinationUnit":{"$ref":"18"},"destinationKey":"input","guid":"86107886-add2-45b6-802e-364d648e8c77","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"26"},"sourceKey":"result","destinationUnit":{"$ref":"24"},"destinationKey":"name","guid":"d7cb297b-7b70-4e6a-bddf-0f6214d5867a","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"29"},"sourceKey":"output","destinationUnit":{"$ref":"26"},"destinationKey":"%arg2","guid":"827ca178-400b-4748-9b7c-41f79c12f27d","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"12"},"sourceKey":"output","destinationUnit":{"$ref":"24"},"destinationKey":"input","guid":"c6926d64-dbbd-49a5-9c13-6d36c45b255a","$type":"Bolt.ValueConnection"}],"$version":"A"}}}'
+    _objectReferences: []
+--- !u!114 &156570737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 156570731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1465209106, guid: c8d0ad23af520fe46aabe2b1fecf6462, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[],"$version":"A"},"$version":"A"}}'
+    _objectReferences: []
 --- !u!1 &161295448
 GameObject:
   m_ObjectHideFlags: 0
@@ -602,6 +639,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4688188216254916574, guid: 0e5db43139d98294dbd10a8cb6c37cf9,
+        type: 3}
+      propertyPath: _data._json
+      value: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"Scene","value":{"$content":"Level4","$type":"System.String"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e5db43139d98294dbd10a8cb6c37cf9, type: 3}
@@ -1224,6 +1266,8 @@ GameObject:
   - component: {fileID: 1054972167}
   - component: {fileID: 1054972166}
   - component: {fileID: 1054972165}
+  - component: {fileID: 1054972169}
+  - component: {fileID: 1054972168}
   m_Layer: 5
   m_Name: QuitButton
   m_TagString: Untagged
@@ -1331,6 +1375,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1054972163}
   m_CullTransparentMesh: 0
+--- !u!114 &1054972168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1054972163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -57143145, guid: a040fb66244a7f54289914d98ea4ef7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"nest":{"source":"Embed","macro":null,"embed":{"variables":{"Kind":"Flow","collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":370.1635,"y":61.31369},"zoom":0.9,"elements":[{"coroutine":false,"defaultValues":{},"position":{"x":-204.0,"y":-144.0},"guid":"8b5f4615-0173-4af3-ab76-26e2e0295de8","$version":"A","$type":"Bolt.Start"},{"coroutine":false,"defaultValues":{},"position":{"x":-204.0,"y":60.0},"guid":"19a93bb4-90f3-45e8-84fe-84d96525f548","$version":"A","$type":"Bolt.Update"},{"coroutine":false,"defaultValues":{"target":null},"position":{"x":67.0,"y":-70.0},"guid":"f1dc9f09-83eb-4a8f-8842-d8d874753e9e","$version":"A","$type":"Bolt.OnButtonClick","$id":"14"},{"chainable":false,"member":{"name":"Quit","parameterTypes":[],"targetType":"UnityEngine.Application","targetTypeName":"UnityEngine.Application","$version":"A"},"defaultValues":{},"position":{"x":266.0,"y":-70.0},"guid":"acc61414-bd87-4290-8e94-a035a42516f8","$version":"A","$type":"Bolt.InvokeMember","$id":"16"},{"sourceUnit":{"$ref":"14"},"sourceKey":"trigger","destinationUnit":{"$ref":"16"},"destinationKey":"enter","guid":"383c8ff9-a943-4d82-9e07-e53da2441b49","$type":"Bolt.ControlConnection"}],"$version":"A"}}}'
+    _objectReferences: []
+--- !u!114 &1054972169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1054972163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1465209106, guid: c8d0ad23af520fe46aabe2b1fecf6462, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[],"$version":"A"},"$version":"A"}}'
+    _objectReferences: []
 --- !u!1001 &1433812741
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1456,6 +1530,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4688188216254916574, guid: 0e5db43139d98294dbd10a8cb6c37cf9,
+        type: 3}
+      propertyPath: _data._json
+      value: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"Scene","value":{"$content":"Level2","$type":"System.String"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e5db43139d98294dbd10a8cb6c37cf9, type: 3}
